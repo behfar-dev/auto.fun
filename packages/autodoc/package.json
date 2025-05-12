@@ -9,9 +9,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build:autodoc": "tsup",
-    "dev:autodoc": "tsup --watch",
+    "dev:autodoc": "node api.js && tsup --watch",
     "autodoc": "bun dist/index.js",
-    "start": "bun dist/index.js",
+    "start": "node api.js && bun dist/index.js",
     "clean": "rm -rf dist .turbo node_modules .turbo-tsconfig.json tsconfig.tsbuildinfo",
     "lint": "prettier --write ./src",
     "format": "prettier --write ./src",
