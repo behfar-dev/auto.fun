@@ -1,6 +1,0 @@
-{
-  "files.exclude": {
-    "**/packages/src/public/chart": true,
-    "bun.lock": true
-  }
-}
